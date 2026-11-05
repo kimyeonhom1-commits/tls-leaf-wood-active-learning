@@ -1,6 +1,6 @@
 # Active learning selectors for TLS leaf–wood separation
 
-Acquisition-strategy code for *Active Learning for Leaf–Wood Separation in Terrestrial Laser Scanning Point Clouds: Label Efficiency and Run-to-Run Variability* (Yeonho Kim and Choong-Sik Kim).
+Acquisition-strategy code for *Comparing active learning strategies for leaf–wood separation in terrestrial laser scanning point clouds: label budget, class-specific errors, and run-to-run variability* (Yeonho Kim and Choong-Sik Kim).
 
 This package contains only the selection code: Random, Entropy, BALD, k-Center, BADGE, CLUE, and Fisher A-optimal. The PTv3 training and evaluation pipeline, data, model weights, and logs are not included, so the paper's trained-model results cannot be reproduced from this package alone. The acquisition algorithms follow the experiment code. Comments, docstrings, unused `Pool` fields, and unused local variables were removed. `clue.py` also has a numerical guard for the case where all candidates are nearly certain.
 
