@@ -34,7 +34,3 @@ Each call selects labels for one training tree. Build `methods.common.Pool(xyz, 
 - CLUE: temperature 0.1, `n_init=10`, `max_iter=300` (scikit-learn KMeans; versions may change results). If all candidates are nearly certain, the entropy weights are rescaled and the factor is returned as `weight_scale` (`weighted_inertia` then refers to the rescaled weights).
 - Fisher A-optimal: L2-normalized last-layer features plus a bias coordinate (divided by √2), weighted by √(p₀p₁), regularization 1/65 (D = 64), forward greedy selection. It approximates BAIT and does not use backward pruning.
 - Training in the study was not deterministic.
-
-## Data
-
-Shivalik Range TLS dataset: https://doi.org/10.5281/zenodo.15362444
